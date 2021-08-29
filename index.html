@@ -17,7 +17,10 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.13/moment-timezone-with-data-2012-2022.min.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -29,7 +32,8 @@
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#variedad">Variedad</a></li>
                         <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Tendencias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Fotos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tendencias">Tendencias</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                     </ul>
                 </div>
@@ -57,7 +61,6 @@
                         <h2 class="text-white mt-0">Variedad Geisha</h2>
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                        <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
                     </div>
                 </div>
             </div>
@@ -160,11 +163,27 @@
                 </div>
             </div>
         </div>
-        <!-- Call to action-->
-        <section class="page-section">
-            <div class="container px-4 px-lg-5 text-center" id="Graph-Temp">
-                 <div id="Graph-Temp"></div>
-            </div>
+        <!-- Tendencias-->
+        <section class="page-section" id="tendencias">
+            <h2 class="text-center mt-0">Tendencia variables ambientales</h2>
+                <hr class="divider" />
+                <div class="row g-0">
+                    <div class="col-lg-6 col-sm-12">
+                         <div class= "container" id="Graph-Temp"></div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                         <div class= "container" id="Graph-Humedad"></div>
+                    </div>
+                </div>
+                <hr class="divider" />
+                <div class="row g-0">
+                    <div class="col-lg-6 col-sm-12">
+                         <div class= "container" id="Graph-Luz"></div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                         <div class= "container" id="Graph-UV"></div>
+                    </div>
+                </div>
         </section>
         <!-- Contacto-->
         <section class="page-section bg-dark text-white" id="contact">
@@ -179,13 +198,13 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div> (+505) 8546-5692</div>
+                        <div> (+506) 8546-5692</div>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
                         <i class="bi-facebook fs-2 mb-3 text-muted"></i>
-                        <div> (+505) 8546-5692</div>
+                        <div> (+506) 8546-5692</div>
                     </div>
                 </div>
             </div>
