@@ -172,6 +172,9 @@ Highcharts.stockChart('Graph-Temp', {
     rangeSelector: {
         enabled: false
     },    
+    scrollbar: {
+        enabled: false
+    }, 
     credits: false,
     xAxis: {
         type: 'datetime',
@@ -221,6 +224,9 @@ Highcharts.stockChart('Graph-Humedad', {
         }
     },
     rangeSelector: {
+        enabled: false
+    }, 
+    scrollbar: {
         enabled: false
     },    
     credits: false,
@@ -273,7 +279,10 @@ Highcharts.stockChart('Graph-Luz', {
     },
     rangeSelector: {
         enabled: false
-    },    
+    },  
+    scrollbar: {
+        enabled: false
+    },   
     credits: false,
     xAxis: {
         type: 'datetime',
@@ -324,7 +333,10 @@ Highcharts.stockChart('Graph-UV', {
     },
     rangeSelector: {
         enabled: false
-    },    
+    },   
+    scrollbar: {
+        enabled: false
+    }, 
     credits: false,
     xAxis: {
         type: 'datetime',
