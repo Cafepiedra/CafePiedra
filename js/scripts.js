@@ -208,6 +208,9 @@ Highcharts.stockChart('Graph-Temp', {
     legend: {
         enabled:false
     },
+    tooltip: {
+        valueDecimals: 2
+    },
     series: [{
         data: dataTemp,
         name: 'Temperatura'
@@ -261,6 +264,9 @@ Highcharts.stockChart('Graph-Humedad', {
     },
     legend: {
         enabled:false
+    },
+    tooltip: {
+        valueDecimals: 2
     },
     series: [{
         data: dataHum,
@@ -316,6 +322,9 @@ Highcharts.stockChart('Graph-Luz', {
     legend: {
         enabled:false
     },
+    tooltip: {
+        valueDecimals: 1
+    },
     series: [{
         data: dataLuz,
         name: 'Luz Visible'
@@ -366,6 +375,9 @@ Highcharts.stockChart('Graph-UV', {
                 menuItems: ["viewFullscreen", "separator", "downloadPNG", "downloadJPEG", "downloadPDF", "downloadSVG"]
             }
         }
+    },
+    tooltip: {
+        valueDecimals: 1
     },
     legend: {
         enabled:false
