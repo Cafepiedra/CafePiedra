@@ -114,69 +114,6 @@ for (var i in json){
     pointUV=[];
 }
 
-/*
-for (var i in jsonTemp){
-    date= new Date(jsonTemp[i].fecha);
-    point.push(date.getTime());
-  if (jsonTemp[i].temperatura!=null){
-    point.push(parseFloat(jsonTemp[i].temperatura));
-  }
-  else{
-    point.push(jsonTemp[i].temperatura);
-  }
-  
-    dataTemp.push(point);
-    point=[];
-}
-
-//Preprocesamiento datos Humedad 
-var dataHum=[];
-for (var i in jsonHum){
-    date= new Date(jsonHum[i].fecha);
-    point.push(date.getTime());
-  if (jsonHum[i].humedad!=null){
-    point.push(parseFloat(jsonHum[i].humedad));
-  }
-  else{
-    point.push(jsonHum[i].humedad);
-  }
-  
-    dataHum.push(point);
-    point=[];
-}
-
-//Preprocesamiento datos Luz 
-var dataLuz=[];
-for (var i in jsonLuz){
-    date= new Date(jsonLuz[i].fecha);
-    point.push(date.getTime());
-  if (jsonLuz[i].luz!=null){
-    point.push(parseFloat(jsonLuz[i].luz));
-  }
-  else{
-    point.push(jsonLuz[i].luz);
-  }
-  
-    dataLuz.push(point);
-    point=[];
-}
-
-//Preprocesamiento datos UV 
-var dataUV=[];
-for (var i in jsonUV){
-    date= new Date(jsonUV[i].fecha);
-    point.push(date.getTime());
-  if (jsonUV[i].UV!=null){
-    point.push(parseFloat(jsonUV[i].UV));
-  }
-  else{
-    point.push(jsonUV[i].luz);
-  }
-  
-    dataUV.push(point);
-    point=[];
-}
-*/
 Highcharts.setOptions({
   time: {
     timezone: 'America/Costa_Rica'
