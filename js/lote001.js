@@ -115,10 +115,15 @@ for (var i in json){
 }
 
 Highcharts.setOptions({
-  time: {
-    timezone: 'America/Costa_Rica'
-  },
-  lang: {
+    chart: {
+        style: {
+            fontFamily: 'sans-serif'
+        }
+    },
+    time: {
+        timezone: 'America/Costa_Rica'
+    },
+    lang: {
         months: [
             'Enero', 'Febrero', 'Marzo', 'Abril',
             'Mayo', 'Junio', 'Julio', 'Agosto',
@@ -145,8 +150,7 @@ Highcharts.stockChart('Graph-Temp', {
     title: {
         text: 'Temperatura de secado',
         style:{
-            fontSize: '22px',
-           fontFamily: 'sans-serif'
+            fontSize: '22px'
         }
     },
     rangeSelector: {
