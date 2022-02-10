@@ -114,6 +114,7 @@ for (var i in json){
     pointUV=[];
 }
 
+
 Highcharts.setOptions({
     chart: {
         style: {
