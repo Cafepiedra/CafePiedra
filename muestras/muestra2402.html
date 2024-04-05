@@ -44,7 +44,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading" >Muestra 1</div>
+                <div class="masthead-subheading" >Muestra 2</div>
                 <div class="masthead-heading text-uppercase" >Café Familia Piedra Solís</div>
             </div>
         </header>
@@ -68,8 +68,8 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-coffee fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Variedad</h4>
-                        <p class="text-muted">Catigua MG2</p>
+                        <h4 class="my-3">Variedades</h4>
+                        <p class="text-muted">Caturra, Catuai, Obatá, Catigua MG2 y Costa Rica 95</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -97,7 +97,7 @@
                             <i class="fas fa-mountain-sun fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Finca</h4>
-                        <p class="text-muted">El Bajo (Bustamante, Frailes)</p>
+                        <p class="text-muted">La Casa, La Guinea y El Bache (Bustamante, Frailes)</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -105,7 +105,7 @@
                             <i class="fas fa-up-down fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Altura</h4>
-                        <p class="text-muted">1450 m.s.n.m</p>
+                        <p class="text-muted">1450 a 1550 m.s.n.m</p>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -115,7 +115,7 @@
                             <i class="fas fa-droplet fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Grados Brix Promedio</h4>
-                        <p class="text-muted">21 ºBx</p>
+                        <p class="text-muted">22 ºBx</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -123,7 +123,7 @@
                             <i class="fas fa-hourglass-start fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Tiempo de secado</h4>
-                        <p class="text-muted">23 días al sol en camas africanas, dentro de un invernadero</p>
+                        <p class="text-muted">19 días al sol en camas africanas, dentro de un invernadero</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -131,7 +131,7 @@
                             <i class="fas fa-temperature-quarter fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Temperatura de secado</h4>
-                        <p class="text-muted">Max: 31.2 ºC / Min: 14.2 ºC / Prom: 18.9 ºC</p>
+                        <p class="text-muted">Max: 35 ºC / Min: 14.6 ºC / Prom: 19.6 ºC</p>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -141,7 +141,7 @@
                             <i class="fas fa-cloud-rain fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Humedad ambiental</h4>
-                        <p class="text-muted">Promedio: 90%</p>
+                        <p class="text-muted">Promedio: 84%</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -149,7 +149,7 @@
                             <i class="fas fa-droplet fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Cantidad disponible</h4>
-                        <p class="text-muted">2 fanegas (100 kg en pergamino)</p>
+                        <p class="text-muted">2,9 fanegas (150 kg en pergamino)</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -244,24 +244,35 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Ubicación</h2>
-                     <p class="text-muted">Ubicación Finca el Bajo</p>
+                     <p class="text-muted">Ubicación Fincas El Bache, La Guinea y La Casa</p>
                 </div>
 
                 <div id="map" style="width:100%;height:500px;"></div>
                 <script>
                     function myMap() {
-                      const myLatLng = {lat:9.750290, lng:-84.083656};
+                      const myLatLng = {lat:9.753890, lng:-84.069157};
                       const map = new google.maps.Map(document.getElementById("map"), { 
-                        zoom: 18,
-                        center: myLatLng,
+                        zoom: 16,
+                        center: myLatLng, 
                         mapTypeId: 'satellite'
                       });
 
                       new google.maps.Marker({
-                        position: myLatLng,
+                        position: {lat:9.751053, lng:-84.062461},
                         map,
-                        title: "Finca el Bajo",
+                        title: "Finca La Guinea",
                       });
+                      new google.maps.Marker({
+                        position: {lat:9.753032, lng:-84.074694},
+                        map,
+                        title: "Finca La Casa",
+                      });
+                      new google.maps.Marker({
+                        position: {lat:9.755617, lng:-84.068616},
+                        map,
+                        title: "Finca El Bache",
+                      });
+
                     }
                 </script>
                 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8yUuiVYmg0W5CWT4Q8IA2jlsTwlnwUjg&callback=myMap"></script>          
@@ -272,7 +283,7 @@
         <section class="page-section bg-light" id="trazabilidad">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Trazabilidad del secado</h2>
-                    <p class="text-muted">Las tendencias de las variables ambientales que incidieron en el proceso de secado del café bajo el sol en camas africanas se detallan a continuación. Abarcan desde el 26 de diciembre del 2023 hasta el 18 de enero del 2024. Acá podrá apreciar el comportamiento de la temperatura y la humedad relativa del ambiente, además de la incidencia de luz y rayos ultravioleta en el café.</p>
+                    <p class="text-muted">Las tendencias de las variables ambientales que incidieron en el proceso de secado del café bajo el sol en camas africanas se detallan a continuación. Abarcan desde el 4 hasta el 23 de febrero del 2024. Acá podrá apreciar el comportamiento de la temperatura y la humedad relativa del ambiente, además de la incidencia de luz y rayos ultravioleta en el café.</p>
                 </div>
                
                 <div class="row g-0">
@@ -314,6 +325,6 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <script src="js/muestra2401.js"></script>
+        <script src="js/muestra2402.js"></script>
     </body>
 </html>
