@@ -61,7 +61,7 @@
                             <i class="fas fa-address-card fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Produtor</h4>
-                        <p class="text-muted">Rodrigo Piedra Monge</p>
+                        <p class="text-muted">Guisselle Solís Garro / Rodrigo Piedra Monge</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -69,7 +69,7 @@
                             <i class="fas fa-coffee fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Variedades</h4>
-                        <p class="text-muted">Caturra, Catuai, Obatá, Catigua MG2 y Costa Rica 95</p>
+                        <p class="text-muted">Caturra, Catuai, Obatá, Catigua MG2, Geisha y Costa Rica 95</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -97,7 +97,7 @@
                             <i class="fas fa-mountain-sun fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Finca</h4>
-                        <p class="text-muted">La Casa, La Guinea y El Bache (Bustamante, Frailes)</p>
+                        <p class="text-muted">La Guinea (Bustamante, Frailes)</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -105,7 +105,7 @@
                             <i class="fas fa-up-down fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Altura</h4>
-                        <p class="text-muted">1450 a 1550 m.s.n.m</p>
+                        <p class="text-muted">1550 m.s.n.m</p>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -149,7 +149,7 @@
                             <i class="fas fa-scale-balanced fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Cantidad disponible</h4>
-                        <p class="text-muted">2,9 fanegas (150 kg en pergamino)</p>
+                        <p class="text-muted">1 quintal</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -157,7 +157,7 @@
                             <i class="fas fa-money-bill fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Precio por quintal</h4>
-                        <p class="text-muted">$425</p>
+                        <p class="text-muted">$350</p>
                     </div>
                 </div>
             </div>
@@ -250,9 +250,9 @@
                 <div id="map" style="width:100%;height:500px;"></div>
                 <script>
                     function myMap() {
-                      const myLatLng = {lat:9.753890, lng:-84.069157};
+                      const myLatLng = {lat:9.751053, lng:-84.062461};
                       const map = new google.maps.Map(document.getElementById("map"), { 
-                        zoom: 16,
+                        zoom: 18,
                         center: myLatLng, 
                         mapTypeId: 'satellite'
                       });
@@ -261,16 +261,6 @@
                         position: {lat:9.751053, lng:-84.062461},
                         map,
                         title: "Finca La Guinea",
-                      });
-                      new google.maps.Marker({
-                        position: {lat:9.753032, lng:-84.074694},
-                        map,
-                        title: "Finca La Casa",
-                      });
-                      new google.maps.Marker({
-                        position: {lat:9.755617, lng:-84.068616},
-                        map,
-                        title: "Finca El Bache",
                       });
 
                     }
@@ -324,7 +314,6 @@
         
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script src="js/muestra2402.js"></script>
     </body>
 </html>
